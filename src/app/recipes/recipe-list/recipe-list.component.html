@@ -1,0 +1,18 @@
+<!-- 54. Adding Content to the Recipes Components -->
+<div class="row">
+  <div class="col-xs-12">
+    <button class="btn btn-success">New Recipe</button>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-xs-12">
+      <!-- <h2>55. Outputting a List of Recipes with ngFor </h2> -->
+       <!-- 88. Passing Data with Event and Property Binding (Combined) -->
+      <app-recipe-item
+      *ngFor="let recipeEl of recipes"
+      [recipe]="recipeEl"
+      (recipeSelected)="onRecipeSelected(recipeEl)"
+      ></app-recipe-item>
+  </div>
+</div>
